@@ -276,6 +276,13 @@ namespace MaquinaExpendedora
             else
             {
                 Console.WriteLine("Cannot buy\n");
+                Console.Write("Your money: ");
+                foreach (var coin in money)
+                {
+                    Console.Write(coin + " ");
+                }
+                Console.WriteLine("\n");
+
                 return null;
 
             }
